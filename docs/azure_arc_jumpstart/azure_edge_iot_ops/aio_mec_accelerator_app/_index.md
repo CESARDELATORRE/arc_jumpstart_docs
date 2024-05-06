@@ -153,13 +153,13 @@ Logically, you need to have [installed Git](https://git-scm.com/downloads) in th
 
 Then, using a command-line tool (PowerShell in Windows or Bash in Linux) clone the repo:
 
-```
+```powershell
 git clone https://github.com/Azure/mec-app-solution-accelerator.git
 ```
 
 **TEMPORAL NOTE:** Until v2 is in the **main branch**, please use the branch **"mec-accelerator-aio-dev"** by positioning within the folder of the cloned repo and running this command:
 
-```
+```powershell
 git checkout mec-accelerator-aio-dev
 ```
 
@@ -167,7 +167,7 @@ git checkout mec-accelerator-aio-dev
 
 From the console, move to the deployment folder within the cloned repo:
 
-```
+```powershell
 cd <YOUR PATH>/deploy/k8s
 ```
 
@@ -177,7 +177,7 @@ Update the config map that contains essential information for connecting to our 
 
 Replace the following values in the file:
 
-```
+```yaml
   MobileNetwork__SubscriptionId: "your_subscription_id"
   MobileNetwork__ResourceGroup: "your_resource_group"
   MobileNetwork__Name: "your_network_name"
@@ -236,7 +236,7 @@ Execute the script `deploy-accelerator.ps1` while providing the selected paramet
 
 For deploying into AKS Edge Essentials or a plain K3S in an Ubuntu-Linux, with Azure IoT MQ (aka.E4K), the command is the following:
 
-```
+```powershell
 .\deploy-accelerator.ps1 -kubernetesDistro k3s -mqttBroker E4K
 ```
 
@@ -247,7 +247,7 @@ Execute the script `deploy-accelerator.sh` while providing the selected paramete
 
 For deploying into AKS Edge Essentials or a plain K3S in an Ubuntu-Linux, with Azure IoT MQ (aka.E4K), the command is the following:
 
-```
+```powershell
 ./deploy-accelerator.sh --kubernetesDistro k3s --mqttBroker E4K
 ```
 
@@ -288,12 +288,14 @@ Either way, you should be able to run the 'Alerts dashboard UI' and check out th
 - Run the `deploy-accelerator` command with the `-uninstall` parameter to remove all related kubernetes resources for this application, since there is no stop action on kubectl.
 
 Windows:
-```
+
+```powershell
 .\deploy-accelerator.ps1 -uninstall
 ```
 
 Linux:
-```
+
+```powershell
 .\deploy-accelerator.sh -- uninstall
 ```
 
