@@ -253,6 +253,9 @@ For deploying into AKS Edge Essentials or a plain K3S in an Ubuntu-Linux, with A
 
 Basically, the only difference in usage should be the script file name (**.ps1** vs. **.sh**).
 
+Here's an example of the application's setup script execution:
+
+<img width="599" alt="image" src="./deploy_00.png">
 
 ### Try the 'Control Plain app' to provision cameras (and 5G network SIMs if using 5G cameras in a Private 5G network)
 
