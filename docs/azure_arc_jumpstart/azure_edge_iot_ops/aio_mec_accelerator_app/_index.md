@@ -56,7 +56,7 @@ Once the application is deployed into Kubernetes, as mentioned in the high-level
 
 The home page of this app basically shows you the main actions you can do from here:
 
-<img width="599" alt="image" src="./deploy_02.png">
+<img width="1000" alt="Control Plane app home page" src="./deploy_02.png">
 
 #### (OPTIONAL) 5G SIMs provisioning
 
@@ -64,13 +64,13 @@ As mentioned, this configuration is optional. If you are not using any cellular 
 
 When you click on the 'SIMs Provisioning' menu option, the application will show you the list of SIMs already provisioned in your Azure Private 5G Core network. That information is coming directly from Azure Private 5G Core thorugh its REST APIs.
 
-<img width="599" alt="image" src="./ui_features_01.png">
+<img width="1000" alt="image" src="./ui_features_01.png">
 
 The value-added provided by this UI integrated to Azure Private 5G Core is that any regular business application operator can provisiong SIMs without having access to the Azure subscription/portal as an administrator or technical person.
 
 User operators can easily delete or add new SIM cards to the cellular 5G network by providing the typical SIM data:
 
-<img width="599" alt="image" src="./ui_features_02.png">
+<img width="1000" alt="image" src="./ui_features_02.png">
 
 It's very straightforward because even the IP to be provided comes from the a query to AP5GC with a pool of available IPs. Also the available SIM groups and SIM Policies to assign to.
 
@@ -78,19 +78,19 @@ It's very straightforward because even the IP to be provided comes from the a qu
 
 The most important asset to provision are te video cameras. This application allows to dynamically provision 'n' number of IP cameras without having to update any code or configuration settings. A user can directly do it from the UI and the pods in Kubernetes will dynamically support the new stream ingestion, as in the following screenshot:
 
-<img width="599" alt="image" src="./ui_features_03.png">
+<img width="1000" alt="image" src="./ui_features_03.png">
 
 The important camera's value in there is the RTSP Uri. The rest of the values are simply to make it easier to construct the Uri, but if you know the Uri of your IP camera, you can also directly provide it, including Wi-Fi or Ethernet IP cameras, not just 5G cellular cameras.
 
 Once you add any camera to the system you can check that it's working in the 'Cameras dashboard' page:
 
-<img width="599" alt="image" src="./ui_features_04.png">
+<img width="1000" alt="image" src="./ui_features_04.png">
 
 ### Alerts dashboard app UI
 
 Finally, but as the most important feature of this application, you can see the alerts being triggered originally detected by the AI model analyzing the video, as in the below screenshot which is detecting a person and showing that fact within a bounding-box:
 
-<img width="599" alt="image" src="./ui_features_05.png">
+<img width="1000" alt="image" src="./ui_features_05.png">
 
 Since these alerts are internally defined as messages going through a MQTT broker following a Publish/Subscription pattern, you could easily extendthis application and propagate these alerts as emails, text messages or to any other business system related to alerts.
 
@@ -255,33 +255,33 @@ Basically, the only difference in usage should be the script file name (**.ps1**
 
 Here's an example of the application's setup script execution:
 
-<img width="599" alt="image" src="./deploy_00.png">
+<img width="1000" alt="image" src="./deploy_00.png">
 
-### Try the 'Control Plain app' to provision cameras (and 5G network SIMs if using 5G cameras in a Private 5G network)
+### Try the 'Control Plain app' to provision cameras
 
 In order to know the URL for the 'Control Plain web app', using a browser go to the Kubernetes dashboard, select the Kuberentes namespace where the application is deployed ("mec-accelerator"), go to the "Services" menu in the left tab and click on the url to the right on the **"control-plane-ui-service" service** row.
 
-<img width="599" alt="image" src="./deploy_01.png">
+<img width="1000" alt="image" src="./deploy_01.png">
 
 You can also directly access the URL for the Control Plane App if you know the IP used for the **"control-plane-ui-service" service** like the following:
 
 `http://<your-IP>:90/`
 
-<img width="599" alt="image" src="./deploy_02.png">
+<img width="1000" alt="image" src="./deploy_02.png">
 
 ### Access the Alerts dashboard UI with Alerts originated from AI model detections
 
 To access the Alerts dashboard UI front-end, if using LOCALHOST, you can click on the link from the Control-Plane app here:
 
-<img width="599" alt="image" src="./deploy_03.png">
+<img width="1000" alt="image" src="./deploy_03.png">
 
 Or you can also find out the real URL from the K8s dashboard, from the Alerts-UI service config, select the Kuberentes namespace where the application is deployed (MEC-Accelerator), go to the services menu in the left tab and click on the url to the right on the Alerts-UI service row:
 
-<img width="599" alt="image" src="./deploy_04.png">
+<img width="1000" alt="image" src="./deploy_04.png">
 
 Either way, you should be able to run the 'Alerts dashboard UI' and check out the Alerts originated from the AI models:
 
-<img width="599" alt="image" src="./deploy_05.png">
+<img width="1000" alt="image" src="./deploy_05.png">
 
 
 ### Remove the MEC-Application from Kubernetes 
