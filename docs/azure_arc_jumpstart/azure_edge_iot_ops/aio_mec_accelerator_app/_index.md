@@ -119,13 +119,19 @@ Install the AKS-EE-Windows cluster or the K3s-Ubuntu cluster by following the in
 
 **Install AKS-EE-Windows alternative:** 
 
-[Create your Azure Arc-enabled Kubernetes cluster on Windows](https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster?tabs=aks-edge-essentials)
+[Create your Azure Arc-enabled Kubernetes cluster on Windows]([https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster?tabs=aks-edge-essentials](https://learn.microsoft.com/en-us/azure/iot-operations/get-started/quickstart-deploy?tabs=windows#connect-a-kubernetes-cluster-to-azure-arc))
 
 **Install K3s-Ubuntu-Linux alternative:** 
 
 [Create your Azure Arc-enabled K3s cluster on Ubuntu-Linux](https://learn.microsoft.com/en-us/azure/iot-operations/get-started/quickstart-deploy?tabs=linux#connect-a-kubernetes-cluster-to-azure-arc)
 
+## (OPTIONAL ALTERNATIVE) Install the Kubernetes/K3s cluster in Azure cloud
 
+If you do not have any on-premises video camera to try with the application or do not have an edge/on-prem machine or VM where to install the cluster, you can also deploy the application in a VM cluster in Azure cloud. 
+
+[Install AKS Edge Essentials in Azure cloud with ARM template](https://azurearcjumpstart.io/azure_arc_jumpstart/azure_edge_iot_ops/aks_edge_essentials_single)
+
+However, note that if deploying to the cloud you will only be able to try a simulation of video-camera (RTSP stream container we provide with the app), unless you are able to publish your cameras in the Internet with any public IP and access to the cameras from the Azure cloud.
 
 ## Install Azure IoT Operations into your cluster
 
