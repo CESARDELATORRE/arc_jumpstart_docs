@@ -97,7 +97,7 @@ Finally, but as the most important feature of this application, you can see the 
 
 <img width="1000" alt="image" src="./docs/imgs/ui_features_05.png">
 
-Since these alerts are internally defined as messages going through a MQTT broker following a Publish/Subscription pattern, you could easily extendthis application and propagate these alerts as emails, text messages or to any other business system related to alerts.
+Since these alerts are internally defined as messages going through a MQTT broker following a Publish/Subscription pattern, you could easily extend this application and propagate these alerts as emails, text messages or to any other business system related to alerts.
 
 ## Getting started: Deploy the MEC Application Solution Accelerator into a light Kubernetes cluster at the edge 
 
