@@ -272,9 +272,6 @@ Then search for the service with name **"control-plane-ui-service"** and related
 
 <img width="1000" alt="image" src="./docs/imgs/deploy_02.png">
 
-You could also find out the IP and port by using the Kubernetes dashboard, select the Kubernetes  namespace where the application is deployed ("mec-accelerator"), go to the "Services" menu in the left tab and click on the url to the right on the **"control-plane-ui-service" service** row.
-
-<img width="1000" alt="image" src="./docs/imgs/deploy_01.png">
 
 ### Access the Alerts dashboard UI with Alerts originated from AI model detections
 
@@ -295,21 +292,10 @@ Alternatively, you can also click on the link "Alerts Dashboard" from the Contro
 
 <img width="1000" alt="image" src="./docs/imgs/deploy_03.png">
 
-As a third alternative and again using the K8s dashboard, you can also find out the real URL from the K8s dashboard, select the Kubernetes namespace where the application is deployed (MEC-Accelerator), go to the services menu in the left tab and click on the url to the right on the Alerts-UI service row:
-
-<img width="1000" alt="image" src="./docs/imgs/deploy_04.png">
-
 Following any of those ways you should be able to run the 'Alerts dashboard UI' and check out the Alerts originated from the AI models when analyzing the video:
 
 <img width="1000" alt="image" src="./docs/imgs/deploy_05.png">
 
-### Expose Kubernetes services to external devices (Important if using AKS EE)
-
-If you use **K3s** on an **Ubuntu Linux VM**, it's straightforward since the IP used for your Kubernetes services is usually the same IP used by the VM in the real IP network, so you should be able to access the application services (UI apps in this case) from remote client machines.
-
-However, if you deployed the application into **AKS edge Essentials**, you might need to make Kubernetes services accessible to external devices so they can interact with the web applications you've deployed. Follow the next article that explains how to expose Kubernetes services running on an AKS Edge Essentials cluster to external devices:
-
-[AKS Edge Essentials - Expose Kubernetes services to external devices](https://learn.microsoft.com/en-us/azure/aks/hybrid/aks-edge-howto-expose-service)
 
 ### Remove the MEC-Application from Kubernetes 
 

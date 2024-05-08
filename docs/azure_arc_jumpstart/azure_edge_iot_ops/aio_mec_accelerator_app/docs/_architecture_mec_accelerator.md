@@ -20,7 +20,7 @@ The primary deployment environment is Kubernetes or K3s, as explained in the dep
 
 However, the "core" part of this application (video analytics only without the dynamic camera provisioning feature) can also be deployed into a plain Docker host for development and debugging purposes since for that execution you don't need multiple instances of the same container/pod (one per camera stream) as you can have in Kubernetes, but with a single camera (single container instance for the stream processing) is enough.  
 
-![Screenshot showing alerts app architecture diagram](./arch_02.png)
+![Screenshot showing alerts app architecture diagram](./imgs/arch_02.png)
 
 However, this is not just about 'Video analytics'. The important value of this architecture and reference applications is based on the event-driven architecture which can be very easily customized to support different types of "input data" from IoT devices, so instead of video, it coud ingress data from IoT sensors, or manufacturing machines, analyze it with different type of AI models in the same MEC's network and again generate comparable events and derived alerts with a very low latency.
 
@@ -34,7 +34,7 @@ The video stream processing requires one pod/container per each camera/stream. T
 
 This "dynamic provisioning" of video cameras is implemented thanks to AKRI, a component provided by Azure IoT Operations, which allows to dynamically grow the video ingestion and AI models, as shown in the below software architecture diagram:
 
-![Screenshot showing high level modules architecture diagram](./arch_03.png)
+![Screenshot showing high level modules architecture diagram](./imgs/arch_03.png)
 
 ## Supported deployments for this example application:
 
