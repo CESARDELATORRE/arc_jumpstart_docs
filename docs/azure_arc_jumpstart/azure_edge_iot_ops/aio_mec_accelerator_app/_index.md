@@ -52,9 +52,9 @@ The internal software architecture (event-driven and microservice oriented archi
 
 You can get an overview of this application's functionality by watching the following video:
 
-[![Watch the app intro video](https://img.youtube.com/vi/sA5mIU9ymb8/hqdefault.jpg)](https://www.youtube.com/embed/sA5mIU9ymb8)
+[![Watch the app intro video](https://img.youtube.com/vi/FaV0tIaWWEg/hqdefault.jpg)](https://www.youtube.com/embed/FaV0tIaWWEg)
 
-[<img src="https://img.youtube.com/vi/FaV0tIaWWEg/hqdefault.jpg" width="1024" height="768"
+[<img src="https://img.youtube.com/vi/FaV0tIaWWEg/hqdefault.jpg" width="800" height="600"
 />](https://www.youtube.com/embed/FaV0tIaWWEg)
 
 
