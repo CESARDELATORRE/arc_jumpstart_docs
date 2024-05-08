@@ -53,7 +53,7 @@ The internal software architecture (event-driven and microservice oriented archi
 You can get an overview of this application's functionality by watching the following video:
 
 
-<iframe width="800" height="600" src="https://www.youtube.com/embed/FaV0tIaWWEg" frameborder="0" allowfullscreen></iframe>
+[![Watch the app intro video](https://img.youtube.com/vi/FaV0tIaWWEg/hqdefault.jpg)](https://www.youtube.com/embed/FaV0tIaWWEg)
 
 
 Once the application is deployed into Kubernetes, as mentioned in the high-level modules architecture, there are two main work areas, showcased below:
