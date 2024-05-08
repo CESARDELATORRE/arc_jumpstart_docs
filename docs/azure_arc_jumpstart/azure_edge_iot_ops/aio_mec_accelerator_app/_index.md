@@ -46,7 +46,7 @@ You can see how the control plane app drives the actions related to provisioning
 
 The internal software architecture (event-driven and microservice oriented architecture) and development technology details are explained in detailed in this page:
 
-[MEC-Accelerator Internal Software Architecture details](./docs/imgs/_architecture_mec_accelerator.md)
+[MEC-Accelerator Internal Software Architecture details](./docs/_architecture_mec_accelerator.md)
 
 ## Functional features of the application
 
