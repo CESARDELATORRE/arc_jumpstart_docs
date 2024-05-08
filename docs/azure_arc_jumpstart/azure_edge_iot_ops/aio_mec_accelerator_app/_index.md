@@ -119,7 +119,7 @@ Install the AKS-EE-Windows cluster or the K3s-Ubuntu cluster by following the in
 
 **Install AKS-EE-Windows alternative:** 
 
-[Create your Azure Arc-enabled Kubernetes cluster on Windows]([https://learn.microsoft.com/en-us/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster?tabs=aks-edge-essentials](https://learn.microsoft.com/en-us/azure/iot-operations/get-started/quickstart-deploy?tabs=windows#connect-a-kubernetes-cluster-to-azure-arc))
+[Create your Azure Arc-enabled Kubernetes cluster on Windows](https://learn.microsoft.com/en-us/azure/iot-operations/get-started/quickstart-deploy?tabs=windows#connect-a-kubernetes-cluster-to-azure-arc)
 
 **Install K3s-Ubuntu-Linux alternative:** 
 
