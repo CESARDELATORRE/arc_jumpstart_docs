@@ -52,10 +52,7 @@ The internal software architecture (event-driven and microservice oriented archi
 
 You can get an overview of this application's functionality by watching the following video:
 
-<video src="https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4" controls="controls" style="max-width: 730px;">
-</video>
-
-<video src="https://private-user-images.githubusercontent.com/1712635/329047025-3dfdf79c-d3b1-493b-935b-6cb52d7a9729.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://private-user-images.githubusercontent.com/1712635/329047025-3dfdf79c-d3b1-493b-935b-6cb52d7a9729.mp4" controls="controls" style="max-width: 700px;">
 </video>
 
 The application provides two main functional UI areas, showcased below:
