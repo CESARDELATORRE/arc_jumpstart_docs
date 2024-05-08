@@ -50,9 +50,17 @@ The internal software architecture (event-driven and microservice oriented archi
 
 ## Functional features of the application
 
-Once the application is deployed into Kubernetes, as mentioned in the high-level modules architecture, there are two main work areas, showcased below.
+You can get started with an overview of this application by watching the following video:
 
-### Control Plane app UI
+[![Watch the app intro video](https://img.youtube.com/vi/sA5mIU9ymb8/hqdefault.jpg)](https://www.youtube.com/embed/sA5mIU9ymb8)
+
+[<img src="https://img.youtube.com/vi/sA5mIU9ymb8/hqdefault.jpg" width="600" height="300"
+/>](https://www.youtube.com/embed/sA5mIU9ymb8)
+
+
+Once the application is deployed into Kubernetes, as mentioned in the high-level modules architecture, there are two main work areas, showcased below:
+
+### 1. Control Plane app UI
 
 The home page of this app basically shows you the main actions you can do from here:
 
@@ -86,7 +94,7 @@ Once you add any camera to the system you can check that it's working in the 'Ca
 
 <img width="1000" alt="image" src="./docs/imgs/ui_features_04.png">
 
-### Alerts dashboard app UI
+### 2. Alerts dashboard app UI
 
 Finally, but as the most important feature of this application, you can see the alerts being triggered originally detected by the AI model analyzing the video, as in the below screenshot which is detecting a person and showing that fact within a bounding-box:
 
