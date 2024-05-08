@@ -55,10 +55,7 @@ You can get an overview of this application's functionality by watching the foll
 <video src="https://user-images.githubusercontent.com/169707/126715420-991ad821-9ac8-4b66-b79e-e0966e0f3a89.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
-[![Watch the app intro video](https://img.youtube.com/vi/FaV0tIaWWEg/hqdefault.jpg)](https://www.youtube.com/embed/FaV0tIaWWEg)
-
-
-Once the application is deployed into Kubernetes, as mentioned in the high-level modules architecture, there are two main work areas, showcased below:
+The application provides two main functional UI areas, showcased below:
 
 ### 1. Control Plane app UI
 
